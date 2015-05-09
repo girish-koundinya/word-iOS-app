@@ -15,7 +15,8 @@
 		2D1378C01AFE44D500E10736 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1378BE1AFE44D500E10736 /* LaunchScreen.xib */; };
 		2D1378CC1AFE44D500E10736 /* QuizerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1378CB1AFE44D500E10736 /* QuizerAppTests.m */; };
 		CD3E3DF456D53E37FD2F603B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE284519BAF7556A315F9979 /* libPods.a */; };
-		EAF4A1AF1AFE5A7D000C8A57 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A1AE1AFE5A7D000C8A57 /* NetworkManager.m */; };
+		EAF4A1BA1AFE6B73000C8A57 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A1B91AFE6B73000C8A57 /* NetworkManager.m */; };
+		EAF4A1BE1AFE6BAF000C8A57 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A1BD1AFE6BAF000C8A57 /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +44,10 @@
 		2D1378CA1AFE44D500E10736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1378CB1AFE44D500E10736 /* QuizerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizerAppTests.m; sourceTree = "<group>"; };
 		53172630AAF150BC2E60B310 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		EAF4A1AD1AFE5A7D000C8A57 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
-		EAF4A1AE1AFE5A7D000C8A57 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		EAF4A1B81AFE6B73000C8A57 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Network/NetworkManager.h; sourceTree = "<group>"; };
+		EAF4A1B91AFE6B73000C8A57 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Network/NetworkManager.m; sourceTree = "<group>"; };
+		EAF4A1BC1AFE6BAF000C8A57 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Model/Question.h; sourceTree = "<group>"; };
+		EAF4A1BD1AFE6BAF000C8A57 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = Model/Question.m; sourceTree = "<group>"; };
 		F938CE1CEA72A9AC7B75D202 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FE284519BAF7556A315F9979 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +94,7 @@
 		2D1378AE1AFE44D500E10736 /* QuizerApp */ = {
 			isa = PBXGroup;
 			children = (
+				EAF4A1BB1AFE6B92000C8A57 /* Model */,
 				EAF4A1AC1AFE5A5E000C8A57 /* Network */,
 				2D1378B31AFE44D500E10736 /* AppDelegate.h */,
 				2D1378B41AFE44D500E10736 /* AppDelegate.m */,
@@ -150,10 +154,19 @@
 		EAF4A1AC1AFE5A5E000C8A57 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EAF4A1AD1AFE5A7D000C8A57 /* NetworkManager.h */,
-				EAF4A1AE1AFE5A7D000C8A57 /* NetworkManager.m */,
+				EAF4A1B81AFE6B73000C8A57 /* NetworkManager.h */,
+				EAF4A1B91AFE6B73000C8A57 /* NetworkManager.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		EAF4A1BB1AFE6B92000C8A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4A1BC1AFE6BAF000C8A57 /* Question.h */,
+				EAF4A1BD1AFE6BAF000C8A57 /* Question.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAF4A1AF1AFE5A7D000C8A57 /* NetworkManager.m in Sources */,
+				EAF4A1BA1AFE6B73000C8A57 /* NetworkManager.m in Sources */,
 				2D1378B81AFE44D500E10736 /* ViewController.m in Sources */,
+				EAF4A1BE1AFE6BAF000C8A57 /* Question.m in Sources */,
 				2D1378B51AFE44D500E10736 /* AppDelegate.m in Sources */,
 				2D1378B21AFE44D500E10736 /* main.m in Sources */,
 			);
