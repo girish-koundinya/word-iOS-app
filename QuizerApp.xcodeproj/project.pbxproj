@@ -14,6 +14,8 @@
 		2D1378BD1AFE44D500E10736 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1378BC1AFE44D500E10736 /* Images.xcassets */; };
 		2D1378C01AFE44D500E10736 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1378BE1AFE44D500E10736 /* LaunchScreen.xib */; };
 		2D1378CC1AFE44D500E10736 /* QuizerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1378CB1AFE44D500E10736 /* QuizerAppTests.m */; };
+		CD3E3DF456D53E37FD2F603B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE284519BAF7556A315F9979 /* libPods.a */; };
+		EAF4A1AF1AFE5A7D000C8A57 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A1AE1AFE5A7D000C8A57 /* NetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		2D1378C51AFE44D500E10736 /* QuizerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1378CA1AFE44D500E10736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1378CB1AFE44D500E10736 /* QuizerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizerAppTests.m; sourceTree = "<group>"; };
+		53172630AAF150BC2E60B310 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EAF4A1AD1AFE5A7D000C8A57 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		EAF4A1AE1AFE5A7D000C8A57 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		F938CE1CEA72A9AC7B75D202 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FE284519BAF7556A315F9979 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3E3DF456D53E37FD2F603B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,8 @@
 				2D1378AE1AFE44D500E10736 /* QuizerApp */,
 				2D1378C81AFE44D500E10736 /* QuizerAppTests */,
 				2D1378AD1AFE44D500E10736 /* Products */,
+				C06A95B3E3D57C4236907521 /* Pods */,
+				A234A02EBC61D1144466AB75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +91,7 @@
 		2D1378AE1AFE44D500E10736 /* QuizerApp */ = {
 			isa = PBXGroup;
 			children = (
+				EAF4A1AC1AFE5A5E000C8A57 /* Network */,
 				2D1378B31AFE44D500E10736 /* AppDelegate.h */,
 				2D1378B41AFE44D500E10736 /* AppDelegate.m */,
 				2D1378B61AFE44D500E10736 /* ViewController.h */,
@@ -119,6 +130,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A234A02EBC61D1144466AB75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE284519BAF7556A315F9979 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C06A95B3E3D57C4236907521 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53172630AAF150BC2E60B310 /* Pods.debug.xcconfig */,
+				F938CE1CEA72A9AC7B75D202 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAF4A1AC1AFE5A5E000C8A57 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4A1AD1AFE5A7D000C8A57 /* NetworkManager.h */,
+				EAF4A1AE1AFE5A7D000C8A57 /* NetworkManager.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D1378CF1AFE44D500E10736 /* Build configuration list for PBXNativeTarget "QuizerApp" */;
 			buildPhases = (
+				9372CBD2F931699D4ABD44BF /* Check Pods Manifest.lock */,
 				2D1378A81AFE44D500E10736 /* Sources */,
 				2D1378A91AFE44D500E10736 /* Frameworks */,
 				2D1378AA1AFE44D500E10736 /* Resources */,
+				DCCF0D8DE89B7D688C8799A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,11 +253,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9372CBD2F931699D4ABD44BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCCF0D8DE89B7D688C8799A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D1378A81AFE44D500E10736 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF4A1AF1AFE5A7D000C8A57 /* NetworkManager.m in Sources */,
 				2D1378B81AFE44D500E10736 /* ViewController.m in Sources */,
 				2D1378B51AFE44D500E10736 /* AppDelegate.m in Sources */,
 				2D1378B21AFE44D500E10736 /* main.m in Sources */,
@@ -345,6 +418,7 @@
 		};
 		2D1378D01AFE44D500E10736 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53172630AAF150BC2E60B310 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizerApp/Info.plist;
@@ -355,6 +429,7 @@
 		};
 		2D1378D11AFE44D500E10736 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F938CE1CEA72A9AC7B75D202 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizerApp/Info.plist;
@@ -416,6 +491,7 @@
 				2D1378D11AFE44D500E10736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D1378D21AFE44D500E10736 /* Build configuration list for PBXNativeTarget "QuizerAppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +500,7 @@
 				2D1378D41AFE44D500E10736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
