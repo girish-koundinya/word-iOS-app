@@ -10,4 +10,9 @@
 
 @interface Question : NSObject
 
+@property (nonatomic,strong) NSString* qWord;
+@property (nonatomic,strong) NSArray * choices;
+@property (nonatomic,strong) NSString* answer;
+
+
 @end
