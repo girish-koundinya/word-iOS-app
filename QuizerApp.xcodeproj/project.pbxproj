@@ -14,14 +14,8 @@
 		2D1378BD1AFE44D500E10736 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1378BC1AFE44D500E10736 /* Images.xcassets */; };
 		2D1378C01AFE44D500E10736 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1378BE1AFE44D500E10736 /* LaunchScreen.xib */; };
 		2D1378CC1AFE44D500E10736 /* QuizerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1378CB1AFE44D500E10736 /* QuizerAppTests.m */; };
-		C6E16A861AFE854D00404CD2 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A821AFE854D00404CD2 /* Signika-Bold.ttf */; };
-		C6E16A871AFE854D00404CD2 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A821AFE854D00404CD2 /* Signika-Bold.ttf */; };
-		C6E16A881AFE854D00404CD2 /* Signika-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A831AFE854D00404CD2 /* Signika-Light.ttf */; };
-		C6E16A891AFE854D00404CD2 /* Signika-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A831AFE854D00404CD2 /* Signika-Light.ttf */; };
-		C6E16A8A1AFE854D00404CD2 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A841AFE854D00404CD2 /* Signika-Regular.ttf */; };
-		C6E16A8B1AFE854D00404CD2 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A841AFE854D00404CD2 /* Signika-Regular.ttf */; };
-		C6E16A8C1AFE854D00404CD2 /* Signika-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A851AFE854D00404CD2 /* Signika-Semibold.ttf */; };
-		C6E16A8D1AFE854D00404CD2 /* Signika-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A851AFE854D00404CD2 /* Signika-Semibold.ttf */; };
+		C6E16A981AFE899C00404CD2 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A971AFE899C00404CD2 /* Resources */; };
+		C6E16A991AFE899C00404CD2 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = C6E16A971AFE899C00404CD2 /* Resources */; };
 		CD3E3DF456D53E37FD2F603B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE284519BAF7556A315F9979 /* libPods.a */; };
 		EAF4A1BA1AFE6B73000C8A57 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A1B91AFE6B73000C8A57 /* NetworkManager.m */; };
 		EAF4A1BE1AFE6BAF000C8A57 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A1BD1AFE6BAF000C8A57 /* Question.m */; };
@@ -52,10 +46,7 @@
 		2D1378CA1AFE44D500E10736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1378CB1AFE44D500E10736 /* QuizerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizerAppTests.m; sourceTree = "<group>"; };
 		53172630AAF150BC2E60B310 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C6E16A821AFE854D00404CD2 /* Signika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Signika-Bold.ttf"; path = "../../Downloads/Fonts/fonts2/Signika/Signika-Bold.ttf"; sourceTree = "<group>"; };
-		C6E16A831AFE854D00404CD2 /* Signika-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Signika-Light.ttf"; path = "../../Downloads/Fonts/fonts2/Signika/Signika-Light.ttf"; sourceTree = "<group>"; };
-		C6E16A841AFE854D00404CD2 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Signika-Regular.ttf"; path = "../../Downloads/Fonts/fonts2/Signika/Signika-Regular.ttf"; sourceTree = "<group>"; };
-		C6E16A851AFE854D00404CD2 /* Signika-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Signika-Semibold.ttf"; path = "../../Downloads/Fonts/fonts2/Signika/Signika-Semibold.ttf"; sourceTree = "<group>"; };
+		C6E16A971AFE899C00404CD2 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		EAF4A1B81AFE6B73000C8A57 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Network/NetworkManager.h; sourceTree = "<group>"; };
 		EAF4A1B91AFE6B73000C8A57 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Network/NetworkManager.m; sourceTree = "<group>"; };
 		EAF4A1BC1AFE6BAF000C8A57 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Model/Question.h; sourceTree = "<group>"; };
@@ -106,7 +97,7 @@
 		2D1378AE1AFE44D500E10736 /* QuizerApp */ = {
 			isa = PBXGroup;
 			children = (
-				C6E16A801AFE853300404CD2 /* Resources */,
+				C6E16A971AFE899C00404CD2 /* Resources */,
 				EAF4A1BB1AFE6B92000C8A57 /* Model */,
 				EAF4A1AC1AFE5A5E000C8A57 /* Network */,
 				2D1378B31AFE44D500E10736 /* AppDelegate.h */,
@@ -162,25 +153,6 @@
 				F938CE1CEA72A9AC7B75D202 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C6E16A801AFE853300404CD2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C6E16A811AFE853D00404CD2 /* Fonts */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C6E16A811AFE853D00404CD2 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				C6E16A821AFE854D00404CD2 /* Signika-Bold.ttf */,
-				C6E16A831AFE854D00404CD2 /* Signika-Light.ttf */,
-				C6E16A841AFE854D00404CD2 /* Signika-Regular.ttf */,
-				C6E16A851AFE854D00404CD2 /* Signika-Semibold.ttf */,
-			);
-			name = Fonts;
 			sourceTree = "<group>";
 		};
 		EAF4A1AC1AFE5A5E000C8A57 /* Network */ = {
@@ -283,12 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E16A861AFE854D00404CD2 /* Signika-Bold.ttf in Resources */,
-				C6E16A881AFE854D00404CD2 /* Signika-Light.ttf in Resources */,
+				C6E16A981AFE899C00404CD2 /* Resources in Resources */,
 				2D1378BB1AFE44D500E10736 /* Main.storyboard in Resources */,
 				2D1378C01AFE44D500E10736 /* LaunchScreen.xib in Resources */,
-				C6E16A8C1AFE854D00404CD2 /* Signika-Semibold.ttf in Resources */,
-				C6E16A8A1AFE854D00404CD2 /* Signika-Regular.ttf in Resources */,
 				2D1378BD1AFE44D500E10736 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,10 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E16A891AFE854D00404CD2 /* Signika-Light.ttf in Resources */,
-				C6E16A8B1AFE854D00404CD2 /* Signika-Regular.ttf in Resources */,
-				C6E16A8D1AFE854D00404CD2 /* Signika-Semibold.ttf in Resources */,
-				C6E16A871AFE854D00404CD2 /* Signika-Bold.ttf in Resources */,
+				C6E16A991AFE899C00404CD2 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
