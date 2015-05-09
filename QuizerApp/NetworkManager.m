@@ -12,4 +12,16 @@
 @implementation NetworkManager
 
 
++(void)testMethod {
+    
+    Firebase *myRootRef = [[Firebase alloc] initWithUrl:@"https://wordapp1.firebaseio.com/questions"];
+    
+    [myRootRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        NSLog(@"%@ -> %@", snapshot.key, snapshot.value);
+    }];
+
+    
+    
+}
+
 @end
