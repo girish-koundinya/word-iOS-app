@@ -10,4 +10,20 @@
 
 @implementation Question
 
+- (id)initWithDictionary:(NSDictionary *)dict {
+
+    self = [super init];
+    if (self) {
+        if (dict[@"qWord"] && dict[@"choices"] && dict[@"answer"]) {
+
+            self.qWord = dict[@"qWord"] ?: @"";
+            self.choices = dict[@"choices"] ?: @[];
+            self.answer = dict[@"answer"] ?: @"";
+        } else {
+            NSLog(@"question json issue");
+        }
+    }
+    return self;
+}
+
 @end

@@ -8,20 +8,33 @@
 
 #import "NetworkManager.h"
 #import <Firebase/Firebase.h>
+#import "QuestionParser.h"
 
 @implementation NetworkManager
 
++ (void)initialize
+{
+    if (self == [self class]) {
+        [self testMethod];
+    }
+}
 
-+(void)testMethod {
++ (void)testMethod {
     
     Firebase *myRootRef = [[Firebase alloc] initWithUrl:@"https://wordapp1.firebaseio.com/questions"];
     
     [myRootRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
-        NSLog(@"%@ -> %@", snapshot.key, snapshot.value);
+//        NSLog(@"%@ -> %@", snapshot.key, snapshot.value);
+        
+        questions = [QuestionParser parseQuestions:snapshot.value];
     }];
+}
 
-    
-    
++ (NSMutableArray *)questions {
+    if (!questions) {
+        questions = [NSMutableArray new];
+    }
+    return questions;
 }
 
 @end

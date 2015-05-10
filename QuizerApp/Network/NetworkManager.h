@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+static NSMutableArray *questions = nil;
+
 @interface NetworkManager : NSObject
 
-+(void)testMethod;
++ (void)testMethod;
+
++ (NSMutableArray *)questions;
 
 @end
