@@ -98,6 +98,9 @@
                                         <state key="normal" image="leaderboard.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hXB-jx-XHI" kind="show" id="7de-iF-Feu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15056315064430237" green="0.15055865049362183" blue="0.15056121349334717" alpha="1" colorSpace="calibratedRGB"/>
@@ -152,6 +155,46 @@
             </objects>
             <point key="canvasLocation" x="1710.5" y="386.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="fLe-Xx-TW5">
+            <objects>
+                <viewController id="hXB-jx-XHI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Uc-ym-Fbh"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBr-VY-TMK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F9O-OA-XZp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84o-8h-Pta">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="OrC-n8-ftd">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" image="back.png" id="eEc-WV-KNd"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="xsu-1P-GQ0">
+                                            <rect key="frame" x="43" y="8" width="324" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="First"/>
+                                                <segment title="Second"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15056315064430237" green="0.15055865049362183" blue="0.15056121349334717" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCX-aP-GLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2176.5" y="386.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qz6-nB-l3R">
             <objects>
@@ -175,6 +218,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back.png" width="10" height="18"/>
         <image name="leaderboard.png" width="21" height="24"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
