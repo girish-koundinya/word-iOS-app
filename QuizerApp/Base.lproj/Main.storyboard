@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eEl-0F-XCi">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -27,13 +28,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose wisely." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtK-jw-dRT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose wisely." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtK-jw-dRT">
                                 <rect key="frame" x="16" y="210" width="343" height="40"/>
                                 <fontDescription key="fontDescription" name="Signika-Light" family="Signika" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-UY-sRp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-UY-sRp">
                                 <rect key="frame" x="16" y="300" width="343" height="72"/>
                                 <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="48"/>
                                 <state key="normal" title="Play Now">
@@ -87,21 +88,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlm-00-IfL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SERENE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-ZN-yVM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SERENE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-ZN-yVM">
                                         <rect key="frame" x="0.0" y="87" width="375" height="45"/>
                                         <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="36"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnT-zX-jst">
-                                        <rect key="frame" x="330" y="8" width="37" height="34"/>
-                                        <state key="normal" image="leaderboard.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="hXB-jx-XHI" kind="show" id="7de-iF-Feu"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15056315064430237" green="0.15055865049362183" blue="0.15056121349334717" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -116,16 +108,16 @@
                                 <rect key="frame" x="0.0" y="218" width="375" height="449"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OptionCell" rowHeight="107" id="mOM-gh-vKL" customClass="OptionsCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OptionCell" rowHeight="107" id="mOM-gh-vKL" customClass="OptionsCell">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mOM-gh-vKL" id="6xp-KQ-Q6z">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HUMID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-Qo-IS5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUMID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-Qo-IS5">
                                                     <rect key="frame" x="137" y="33" width="102" height="40"/>
                                                     <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="32"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -144,22 +136,30 @@
                                     <outlet property="delegate" destination="oYW-IH-Lk1" id="zXT-eO-d9e"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3q9-9N-mWh">
+                                <rect key="frame" x="0.0" y="218" width="375" height="449"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uza-RO-qkX" firstAttribute="leading" secondItem="2n9-pj-QHv" secondAttribute="leading" id="3kz-IG-R5W"/>
+                            <constraint firstItem="uza-RO-qkX" firstAttribute="width" secondItem="3q9-9N-mWh" secondAttribute="width" id="43g-kv-t9b"/>
                             <constraint firstItem="uza-RO-qkX" firstAttribute="top" secondItem="Hlm-00-IfL" secondAttribute="bottom" id="4WP-oY-fSS"/>
                             <constraint firstItem="yiq-1o-xDC" firstAttribute="top" secondItem="uza-RO-qkX" secondAttribute="bottom" id="EnS-vy-Hiz"/>
                             <constraint firstItem="Hlm-00-IfL" firstAttribute="top" secondItem="RLL-ZH-jMi" secondAttribute="bottom" id="JU9-B3-bup"/>
+                            <constraint firstItem="uza-RO-qkX" firstAttribute="top" secondItem="3q9-9N-mWh" secondAttribute="top" id="PcE-QF-gxQ"/>
+                            <constraint firstItem="uza-RO-qkX" firstAttribute="height" secondItem="3q9-9N-mWh" secondAttribute="height" id="RMw-NQ-0fb"/>
                             <constraint firstAttribute="trailing" secondItem="uza-RO-qkX" secondAttribute="trailing" id="Uju-9L-jYD"/>
                             <constraint firstAttribute="trailing" secondItem="Hlm-00-IfL" secondAttribute="trailing" id="Y4c-5r-yMY"/>
                             <constraint firstItem="Hlm-00-IfL" firstAttribute="leading" secondItem="2n9-pj-QHv" secondAttribute="leading" id="Y5y-Vf-07d"/>
+                            <constraint firstItem="uza-RO-qkX" firstAttribute="leading" secondItem="3q9-9N-mWh" secondAttribute="leading" id="nfU-Fb-5K0"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="optionsListTableView" destination="uza-RO-qkX" id="bPK-XB-KML"/>
                         <outlet property="questionLabel" destination="X9b-ZN-yVM" id="hM9-aR-H4i"/>
+                        <outlet property="resultImageView" destination="3q9-9N-mWh" id="f5Q-T3-vlM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvH-CC-KQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,7 +230,6 @@
     </scenes>
     <resources>
         <image name="back.png" width="10" height="18"/>
-        <image name="leaderboard.png" width="21" height="24"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
