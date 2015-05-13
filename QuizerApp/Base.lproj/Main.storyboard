@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Signika-Bold.ttf">
@@ -28,40 +27,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose wisely." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtK-jw-dRT">
-                                <rect key="frame" x="16" y="210" width="343" height="40"/>
-                                <fontDescription key="fontDescription" name="Signika-Light" family="Signika" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-UY-sRp">
-                                <rect key="frame" x="16" y="300" width="343" height="72"/>
-                                <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="48"/>
-                                <state key="normal" title="Play Now">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oYW-IH-Lk1" kind="show" id="krE-Cd-51O"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duL-zl-6xS">
+                                <rect key="frame" x="89" y="265" width="198" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose wisely." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtK-jw-dRT">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6gU-4X-YwE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Signika-Light" family="Signika" pointSize="32"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-UY-sRp">
+                                        <rect key="frame" x="0.0" y="65" width="198" height="72"/>
+                                        <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="48"/>
+                                        <state key="normal" title="Play Now">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oYW-IH-Lk1" kind="show" id="krE-Cd-51O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zqa-UY-sRp" firstAttribute="top" secondItem="NtK-jw-dRT" secondAttribute="bottom" constant="25" id="01G-gy-zMA"/>
+                                    <constraint firstItem="Zqa-UY-sRp" firstAttribute="leading" secondItem="duL-zl-6xS" secondAttribute="leading" id="6EA-hI-dMu"/>
+                                    <constraint firstItem="NtK-jw-dRT" firstAttribute="leading" secondItem="duL-zl-6xS" secondAttribute="leading" id="6F3-BE-YAd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zqa-UY-sRp" secondAttribute="trailing" id="By8-oh-KOj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zqa-UY-sRp" secondAttribute="bottom" id="Uzb-DI-aeX"/>
+                                    <constraint firstItem="NtK-jw-dRT" firstAttribute="top" secondItem="duL-zl-6xS" secondAttribute="top" id="WHe-r0-ibW"/>
+                                    <constraint firstAttribute="trailing" secondItem="NtK-jw-dRT" secondAttribute="trailing" id="fHi-GG-17o"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1505631506" green="0.1505586505" blue="0.15056121350000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NtK-jw-dRT" firstAttribute="top" secondItem="98P-vr-ceV" secondAttribute="bottom" constant="210" id="295-jK-lXC"/>
-                            <constraint firstItem="Zqa-UY-sRp" firstAttribute="top" secondItem="NtK-jw-dRT" secondAttribute="bottom" constant="50" id="7Kf-ZG-vit"/>
-                            <constraint firstItem="7VW-TQ-G3M" firstAttribute="top" secondItem="Zqa-UY-sRp" secondAttribute="bottom" constant="295" id="Q6m-qQ-p5W"/>
-                            <constraint firstItem="Zqa-UY-sRp" firstAttribute="leading" secondItem="u6e-37-sJT" secondAttribute="leadingMargin" id="QkX-e9-2BA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NtK-jw-dRT" secondAttribute="trailing" id="c4A-T0-Lje"/>
-                            <constraint firstItem="NtK-jw-dRT" firstAttribute="top" secondItem="98P-vr-ceV" secondAttribute="bottom" constant="210" id="j88-pu-X0n"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zqa-UY-sRp" secondAttribute="trailing" id="sN9-Rr-atA"/>
-                            <constraint firstItem="NtK-jw-dRT" firstAttribute="leading" secondItem="u6e-37-sJT" secondAttribute="leadingMargin" id="sao-YJ-bjk"/>
+                            <constraint firstAttribute="centerX" secondItem="duL-zl-6xS" secondAttribute="centerX" id="AdN-k0-j8Z"/>
+                            <constraint firstAttribute="centerY" secondItem="duL-zl-6xS" secondAttribute="centerY" id="EAI-Fw-qeP"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Q6m-qQ-p5W"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="1rB-rW-l2E"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -204,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCX-aP-GLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2176.5" y="386.5"/>
+            <point key="canvasLocation" x="2729.5" y="386.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qz6-nB-l3R">
