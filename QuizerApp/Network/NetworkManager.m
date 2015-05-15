@@ -19,6 +19,10 @@
     }
 }
 
+//https://wordapp1.firebaseio.com/users
+//https://wordapp1.firebaseio.com/scores
+
+
 + (void)testMethod {
     
     Firebase *myRootRef = [[Firebase alloc] initWithUrl:@"https://wordapp1.firebaseio.com/questions"];

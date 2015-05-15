@@ -18,6 +18,14 @@
 		2D1378ED1AFF16DE00E10736 /* OptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1378EC1AFF16DE00E10736 /* OptionsCell.m */; };
 		2D1378F01AFF1D1500E10736 /* QuestionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1378EF1AFF1D1500E10736 /* QuestionParser.m */; };
 		2D1378F41AFF25DB00E10736 /* QuizViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1378F31AFF25DB00E10736 /* QuizViewModel.m */; };
+		2D86FE1C1B05172E00E26B61 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE111B05172E00E26B61 /* RECommonFunctions.m */; };
+		2D86FE1D1B05172E00E26B61 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE131B05172E00E26B61 /* REFrostedContainerViewController.m */; };
+		2D86FE1E1B05172E00E26B61 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE151B05172E00E26B61 /* REFrostedViewController.m */; };
+		2D86FE1F1B05172E00E26B61 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE171B05172E00E26B61 /* UIImage+REFrostedViewController.m */; };
+		2D86FE201B05172E00E26B61 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE191B05172E00E26B61 /* UIView+REFrostedViewController.m */; };
+		2D86FE211B05172E00E26B61 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE1B1B05172E00E26B61 /* UIViewController+REFrostedViewController.m */; };
+		2D86FE241B0517B800E26B61 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE231B0517B800E26B61 /* RootViewController.m */; };
+		2D86FE271B05184E00E26B61 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86FE261B05184E00E26B61 /* ScoreViewController.m */; };
 		C64B638E1AFE92320017E001 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C64B638A1AFE92320017E001 /* Signika-Bold.ttf */; };
 		C64B638F1AFE92320017E001 /* Signika-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C64B638B1AFE92320017E001 /* Signika-Light.ttf */; };
 		C64B63901AFE92320017E001 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C64B638C1AFE92320017E001 /* Signika-Regular.ttf */; };
@@ -71,6 +79,22 @@
 		2D1378EF1AFF1D1500E10736 /* QuestionParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionParser.m; path = Model/QuestionParser.m; sourceTree = "<group>"; };
 		2D1378F21AFF25DB00E10736 /* QuizViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewModel.h; sourceTree = "<group>"; };
 		2D1378F31AFF25DB00E10736 /* QuizViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewModel.m; sourceTree = "<group>"; };
+		2D86FE101B05172E00E26B61 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		2D86FE111B05172E00E26B61 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		2D86FE121B05172E00E26B61 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		2D86FE131B05172E00E26B61 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		2D86FE141B05172E00E26B61 /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		2D86FE151B05172E00E26B61 /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		2D86FE161B05172E00E26B61 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		2D86FE171B05172E00E26B61 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		2D86FE181B05172E00E26B61 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		2D86FE191B05172E00E26B61 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		2D86FE1A1B05172E00E26B61 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		2D86FE1B1B05172E00E26B61 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		2D86FE221B0517B800E26B61 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2D86FE231B0517B800E26B61 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		2D86FE251B05184E00E26B61 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		2D86FE261B05184E00E26B61 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
 		53172630AAF150BC2E60B310 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C64B638A1AFE92320017E001 /* Signika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Bold.ttf"; sourceTree = "<group>"; };
 		C64B638B1AFE92320017E001 /* Signika-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Light.ttf"; sourceTree = "<group>"; };
@@ -138,6 +162,7 @@
 		2D1378AE1AFE44D500E10736 /* QuizerApp */ = {
 			isa = PBXGroup;
 			children = (
+				2D86FE0E1B05171B00E26B61 /* Library */,
 				2D1378E31AFE951D00E10736 /* Controller */,
 				C64B63881AFE92320017E001 /* Resources */,
 				EAF4A1BB1AFE6B92000C8A57 /* Model */,
@@ -187,6 +212,10 @@
 				2D1378EA1AFF16B700E10736 /* TableViewCell */,
 				2D1378E41AFE953E00E10736 /* QuizViewController.h */,
 				2D1378E51AFE953E00E10736 /* QuizViewController.m */,
+				2D86FE221B0517B800E26B61 /* RootViewController.h */,
+				2D86FE231B0517B800E26B61 /* RootViewController.m */,
+				2D86FE251B05184E00E26B61 /* ScoreViewController.h */,
+				2D86FE261B05184E00E26B61 /* ScoreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +236,33 @@
 				2D1378F31AFF25DB00E10736 /* QuizViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2D86FE0E1B05171B00E26B61 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2D86FE0F1B05172E00E26B61 /* REFrostedViewController */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		2D86FE0F1B05172E00E26B61 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D86FE101B05172E00E26B61 /* RECommonFunctions.h */,
+				2D86FE111B05172E00E26B61 /* RECommonFunctions.m */,
+				2D86FE121B05172E00E26B61 /* REFrostedContainerViewController.h */,
+				2D86FE131B05172E00E26B61 /* REFrostedContainerViewController.m */,
+				2D86FE141B05172E00E26B61 /* REFrostedViewController.h */,
+				2D86FE151B05172E00E26B61 /* REFrostedViewController.m */,
+				2D86FE161B05172E00E26B61 /* UIImage+REFrostedViewController.h */,
+				2D86FE171B05172E00E26B61 /* UIImage+REFrostedViewController.m */,
+				2D86FE181B05172E00E26B61 /* UIView+REFrostedViewController.h */,
+				2D86FE191B05172E00E26B61 /* UIView+REFrostedViewController.m */,
+				2D86FE1A1B05172E00E26B61 /* UIViewController+REFrostedViewController.h */,
+				2D86FE1B1B05172E00E26B61 /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
 			sourceTree = "<group>";
 		};
 		A234A02EBC61D1144466AB75 /* Frameworks */ = {
@@ -436,14 +492,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D86FE211B05172E00E26B61 /* UIViewController+REFrostedViewController.m in Sources */,
 				2D1378F01AFF1D1500E10736 /* QuestionParser.m in Sources */,
+				2D86FE241B0517B800E26B61 /* RootViewController.m in Sources */,
+				2D86FE1C1B05172E00E26B61 /* RECommonFunctions.m in Sources */,
 				2D1378F41AFF25DB00E10736 /* QuizViewModel.m in Sources */,
+				2D86FE1D1B05172E00E26B61 /* REFrostedContainerViewController.m in Sources */,
+				2D86FE271B05184E00E26B61 /* ScoreViewController.m in Sources */,
 				EAF4A1BA1AFE6B73000C8A57 /* NetworkManager.m in Sources */,
+				2D86FE1E1B05172E00E26B61 /* REFrostedViewController.m in Sources */,
 				2D1378B81AFE44D500E10736 /* ViewController.m in Sources */,
 				EAF4A1BE1AFE6BAF000C8A57 /* Question.m in Sources */,
 				2D1378B51AFE44D500E10736 /* AppDelegate.m in Sources */,
+				2D86FE1F1B05172E00E26B61 /* UIImage+REFrostedViewController.m in Sources */,
 				2D1378B21AFE44D500E10736 /* main.m in Sources */,
 				2D1378ED1AFF16DE00E10736 /* OptionsCell.m in Sources */,
+				2D86FE201B05172E00E26B61 /* UIView+REFrostedViewController.m in Sources */,
 				2D1378E61AFE953E00E10736 /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

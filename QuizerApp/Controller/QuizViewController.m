@@ -44,8 +44,8 @@
 
 @end
 
-@interface QuizViewController () <UITableViewDataSource, UITabBarDelegate>
-{
+@interface QuizViewController () <UITableViewDataSource, UITabBarDelegate> {
+    
     NSArray *options;
     NSInteger currentQuestionIndex;
     Question *currentQuestion;
@@ -186,5 +186,21 @@
         }] ;
     }];
 }
+
+#pragma mark - SideMenu
+
+- (IBAction)showScoreView {
+    
+    // Dismiss keyboard (optional)
+    //
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    
+    self.frostedViewController.limitMenuViewSize = YES;
+    self.frostedViewController.menuViewSize = CGSizeMake(self.view.bounds.size.width * 0.75, self.view.bounds.size.height);
+    self.frostedViewController.direction = REFrostedViewControllerDirectionRight;
+    [self.frostedViewController presentMenuViewController];
+}
+
 
 @end
